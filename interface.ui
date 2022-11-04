@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Суперцех</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>191</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="buttons">
+    <item>
+     <widget class="QPushButton" name="total">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Общее количество</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line1">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="mgr">
+      <property name="text">
+       <string>МГР</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="mp">
+      <property name="text">
+       <string>МП</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="macp">
+      <property name="text">
+       <string>МАЦП</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="bigline">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>0</y>
+     <width>31</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>0</y>
+     <width>531</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="total_modules"/>
+   <widget class="QWidget" name="mgr_modules"/>
+   <widget class="QWidget" name="mp_modules"/>
+   <widget class="QWidget" name="macp_modules"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
